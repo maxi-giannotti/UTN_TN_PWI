@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <form> <!-- todos los inputs van con label para la accesibilidad de la web -->
+        <label for="nombre">ingrese su nombre:</label>
+        <input 
+            type="text" 
+            minlength="5" 
+            maxlength="10" 
+            placeholder="nombre" 
+            id="nombre"
+            name="nombre" 
+        >
+
+        <label for="password">ingrese su contraseña</label>
+        <input type="password" id="password" name="password">
+
+        <input type="number">
+        <input type="email" required>
+
+        <input type="submit" value="iniciar sesion">
+        <button type="submit" title="boton de registro">registrar</button>
+        
+        <input type="file">
+        <input type="date">
+        <input type="datetime-local">
+
+        <label for="mensaje">ingrese un mensaje</label>
+        <textarea 
+            id="mensaje" 
+            placeholder="escribe el mensaje aqui..."
+            name="mensaje">
+        </textarea>
+        <br>
+        <span>selecciona tu lenguaje preferido</span>
+        <br>
+        <label for="html">HTML</label>
+        <input type="radio" id="html" name="seleccione-lenguaje">
+        <br>
+        <label for="css">css</label>
+        <input type="radio" id="css" name="seleccione-lenguaje">
+        <br>
+
+        <label for="pais">seleccionar un pais</label>
+        <select name="pais" id="pais">
+            <option value="AR">Argentina</option>
+            <option value="FR">Francia</option>
+            <option value="BR">Brasil</option>
+            <option value="NULO" selected disabled>No Seleccionado</option>
+        </select>
+    </form>
+</body>
+</html>
