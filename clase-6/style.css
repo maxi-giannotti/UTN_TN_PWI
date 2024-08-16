@@ -1,0 +1,59 @@
+/* h1, h2{
+    color: blueviolet;
+    background-color: black;
+    font-size: 60px;
+}
+.titulo-especial{
+    color: red;
+    font-size: 50px;
+    background-color: violet;
+}
+#titulo-super-especial{
+    color: yellow;
+}
+.subrayado{
+    text-decoration: 1px solid underline green;
+}
+body{
+    background-color: aqua;
+} */
+
+
+/* PROPIEDADES, son muchas mas que estas */
+
+h2{
+    color: gray;
+    font-size: 24px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-decoration: yellow 1px dashed overline line-through underline;
+    /* 
+        recibe hasta 4 valores: 
+        color, 
+        tamaño: unidad de medida 
+        tipo: solid, wavy, dashed, dotted, double 
+        ubicacion: overline, line-through, underline
+    si pones none matas el estilo, ya no funcionaria
+    */
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(221, 209, 209);
+    /* 
+    text-shadow:display: 
+    x
+    y
+    difuminado/blur
+    color
+    */
+}
+
+p{
+    line-height: 40px;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-align: end;
+}
