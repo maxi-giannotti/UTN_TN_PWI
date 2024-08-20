@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+
+h1, h2{
+    color: white;
+    text-shadow: 2px 2px 1px rgb(148, 141, 141);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.centro{
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+span{
+    color: red;
+    text-decoration: line-through red solid;
+}
+a{
+    color: yellow;
+    text-decoration: none;
+}
