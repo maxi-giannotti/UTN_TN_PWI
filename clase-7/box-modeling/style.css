@@ -1,0 +1,38 @@
+/* Normalizacion de CSS */
+*{
+    box-sizing: border-box;
+}
+/* hasta ahi, tambien el font-family */
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    */
+    /* 
+    padding: 10px; 10px de padding a todos los lados 
+    */
+    /* padding: 10px 20px; */ /* padding vertical de 10px, padding horizontal 20px
+    padding: 10px 20px 30px; 10top 20horizontal 30botton */
+    /* padding: 10px 20px 30px 40px; es en sentido horario */
+    padding: 20px 40px;
+    border: 3px solid black;
+    border-right: none;
+    border-left: 3px dotted yellow;
+    margin: 10px 20px;
+}
+.link{
+    display: inline-block;
+    margin-top: 200px;
+    background-color: red;
+}
+input{
+    width: 500px;
+    height: 50px;
+}
+
