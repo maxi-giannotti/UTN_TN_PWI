@@ -1,9 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+header{
+    height: 70px;
+    background-color: wheat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.btn-link{
+    display: none;
+}
 
 .padre{
     display: flex;
@@ -22,6 +37,28 @@
     border-radius: 10px;
 }
 
+.hijo:nth-child(2){
+    background-color: chocolate;
+}
+
+.btn-wsp{
+    background-color: green;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    color: white;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+}
+
+.btn-wsp:hover{
+    transform: scale(1.1);
+    transition: 500ms ease-in;
+}
+
 @media screen and (max-width: 1200px){
     .padre{
         background-color: burlywood;
@@ -30,6 +67,16 @@
 
 @media screen and (max-width: 600px){
     .padre{
+        flex-direction: column;
         background-color: coral;
+    }
+    .hijo:nth-child(2){
+        display: none;
+    }
+    .btn-link{
+        display: flex;
+    }
+    nav{
+        display: none;
     }
 }

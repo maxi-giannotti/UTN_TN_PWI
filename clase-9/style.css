@@ -6,103 +6,87 @@
     margin: 0;
 }
 
-
 .padre{
-    background-color: green;
+    background-color: rgb(140, 164, 140);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 100vw;/* viewport width */
-    height: 100vh;/* viewport height */
-    margin-top: 100vh ;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 70px;
     position: relative;
 }
 
 .hijo{
-    background-color: blueviolet;
+    background-color: aquamarine;
     width: 200px;
-    height: 300px;
+    height: 200px;
     border-radius: 10px;
-    position: relative;
 }
 
-
 .hijo:nth-child(1){
-    background-color: aqua;
+    background-color: azure;
 }
 
 .hijo:nth-child(2){
-    background-color: rgb(255, 247, 0);
+    background-color: beige;
     position: absolute;
     top: 80px;
     left: 190px;
 }
 
-
 /* .hijo:nth-child(2){
-    background-color: rgb(255, 247, 0);
+    background-color: beige;
     position: relative;
-    TOP Y LEFT SON PRIORITARIOS
-    left: 60px;
-    top: 40px;
-    bottom: 40px;
-    right: 60px;
-    
+    left: 20px;
+} */
+/*propiedades que se activan cuando pongo position relative 
     top
     bottom
-    left 
+    left
     right
-   
-} */
+    z-index
+     */
 
-.hijo:nth-child(3){
-    background-color: rgb(255, 0, 0);
+.hijo:last-child{
+    background-color: bisque;
 }
 
-/* .hijo:last-child{
-    background-color: aquamarine;
-} */
-
-/* .hijo:first-child{
-    background-color: aqua;
-} */
-
-/* Nros impares 
+/* LLAMA A NUMEROS IMPARES
 .hijo:nth-child(odd){
-    background-color: aqua;
-} */
-/* Nros pares
+    background-color: blue;
+}
+LLAMA A NUMEROS PARES
 .hijo:nth-child(even){
-    background-color: aqua;
-}  */
+    background-color: aliceblue;
+} */
 
 .botonera{
     width: 100vw;
     height: 100px;
-    
 }
 
-.icon-exalidraw{
+.icon-excalidraw{
     background-color: transparent;
     border: none;
 }
-.icon-exalidraw .bi-airplane{
-    font-size: 24px;
+
+.icon-excalidraw .bi-airplane{
+    font-size: 20px;
     z-index: 2;
     position: relative;
 }
 
-
-.icon-exalidraw span{
+.icon-excalidraw span{
     border-radius: 5px;
     padding: 2px 4px;
     background-color: blueviolet;
     color: white;
-    font-size: 12px;
+    font-size: 10px;
     position: relative;
-    right: 12px;
-    top: 7px;
+    right: 10px;
+    top: 10px;
     z-index: 3;
 }
 
@@ -111,7 +95,6 @@
     width: 300px;
     display: flex;
     align-items: center;
-
 }
 
 .input-container input{
@@ -119,14 +102,13 @@
     padding: 10px;
 }
 
-
 .btn-input{
     position: absolute;
-    /* top: 10px; */
-    right: 0;
+    right: 0px;
     border: none;
     background-color: transparent;
     border-left: 1px solid gray;
-    padding: 0 8px;
+    padding: 0px 8px;
     cursor: pointer;
 }
+
