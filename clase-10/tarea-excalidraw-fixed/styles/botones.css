@@ -1,0 +1,20 @@
+.button{
+    position: absolute;
+    right: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 165px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button .bi-stars{
+    font-size: 18px;
+}

@@ -1,0 +1,65 @@
+.assist-card-text{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.assist-card-text .assist-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.assist-card-text .bi-stars{
+    color: white;
+    font-size: 16px;
+    padding: 2px 4px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.input-chat{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.input-chat input{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--color-gray);
+    border-radius: 4px;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.input-chat input::placeholder{
+    font-size: 14px;
+    color: var(--text-color-light);
+}
+
+.input-chat input:hover{
+    border: 1px solid var(--color-button-primario);
+}
+
+.input-chat .button-icon{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    border: none;
+}
+
+.assist-chat .span{
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+}

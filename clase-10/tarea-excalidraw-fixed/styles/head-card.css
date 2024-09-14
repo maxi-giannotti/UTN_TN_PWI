@@ -1,0 +1,36 @@
+.assist-chat .assist-chat-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    text-align: center;
+    margin-top: 4px;
+}
+
+.assist-chat-title{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    padding: 0px 8px;
+    font-weight: 700;
+}
+
+h3{
+    color: var(--text-color-primario);
+}
+
+.box-beta{
+    padding: 4px 4px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.assist-chat .assist-chat-head .assist-chat-head-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px 8px;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-color-primario);
+}
