@@ -6,22 +6,35 @@ CONCATENAR (+) solo ocurre cuando hay un string en la operacion, por ej:
     'pepe' + null
 que hace?
     transforma el dato distinto de string a STRING y devuelve la union de los dos strings. DEVUELVE STRING
-    'pepe' + null
-    'pepe' + String(null)
-    'pepe' + 'null'
-    'pepenull'
+        'pepe' + null
+        'pepe' + String(null)
+        'pepe' + 'null'
+        'pepenull'
 
 
 Y
 //LOS CINCO OPERADORES DE ABAJO DEVUELVEN NUMEROS SIEMPRE, TRANSFORMA EL DATO QUE NO ES NUMERO EN NUMERO.
 //SI ALGUN DATO ES NAN, LA OPERACION FINAL DEVUELVE NAN
-//LOS STRINGS QUE SOLO TIENEN NUMEROS PUEDEN TRANSFORMARSE A NUMEROS
+
 
 + SUMA
     ocurre cuando no hay string 
+
+//LOS STRINGS QUE SOLO TIENEN NUMEROS PUEDEN TRANSFORMARSE A NUMEROS, cuando es en suma, pasa a ser concatenacion
+
 - RESTAR
-/ DIVIDIR
-% MODULO/RESTO
+    9 -'1'
+    9 - Number('1')
+    9 - 1
+    8
+
+/ DIVIDIR,  devuelve numeros reales con coma, ej:
+140 / 23 = 6.08..
+
+% MODULO/RESTO, se usa poco, casi nunca; hace una division pero te devuelve el resto de la division; por ejemplo
+11 / 2 = 5 y queda uno vacio
+11 % 2 = 1 
+
 * MULTIPLICAR
 
 */
@@ -33,20 +46,28 @@ Y
 //NULL NO PUEDE SER IGUAL A NADIE EXCEPTO A UNDEFINED U OTRO NULL
 
 /* 
-== IGUAL A
-=== ESTRICTAMENTE IGUAL
-!= DISTINTO DE 
-!== ESTRICTAMENTE DISTINTO DE
-> MAYOR A 
-< MENOR A 
->= MAYOR O IGUAL A 
-<= MENOR O IGUAL A 
+==  IGUAL A
+
+=== ESTRICTAMENTE IGUAL, no solo compara igualdad de valores, tambien compara igualdad de tipos de datos. por ej: Boolean(1) === true
+
+!=  DISTINTO DE, da verdadero cuando los datos son distintos
+
+!== ESTRICTAMENTE DISTINTO DE, hace lo mismo que distinto de pero comparando el tipado
+
+>   MAYOR A 
+
+<   MENOR A 
+
+>=  MAYOR O IGUAL A 
+
+<=  MENOR O IGUAL A 
+
 */
 
 //Truthy y Falsy
 //TODOS LOS DATOS SE PUEDEN TRANSFORMAR A BOOLEAN
 //LOS VALORES Truthy SON LOS QUE AL TRANSFORMASE A BOOLEAN DEVUELVEN TRUE, SON TODOS LOS QUE NO SEAN FALSY
-//LOS VALORES Falsy SON LOS QUE AL TRANSFORMARSE A BOOLEAN DEVUELVEN FLASE
+//LOS VALORES Falsy SON LOS QUE AL TRANSFORMARSE A BOOLEAN DEVUELVEN FALSE
 
 //LISTA DE VALORES Falsy
 /* 
@@ -60,16 +81,33 @@ false
 */
 
 //OPERADORES LOGICOS
-// !   NOT:  DEVUELVE EL VALOR BOOLEANO OPUESTO AL DATO NEGADO, si el   dato es truthy, devuelve un flasy
+
+// !   NOT
+//   DEVUELVE EL VALOR BOOLEANO OPUESTO AL DATO NEGADO, si el dato es truthy, devuelve un falsy
 
 // &&  AND
 //   SELECCIONA ENTRE DOS VALORES, SI EL PRIMER VALOR ES TRUTHY DEVUELVE EL SEGUNDO
 // SI EL PRIMER VALOR ES FALSY, DEVUELVE EL PRIMERO
+/* 
+por ejemplo: 
+7 && 'pepe'
+'pepe'
+
+
+'' && 0
+''
+*/
 
 
 // ||  OR
 //   SELECCIONA ENTRE DOS VALORES, SI EL PRIMER VALOR ES TRUTHY DEVUELVE EL PRIMERO
 // SI EL PRIMER VALOR ES FALSY, DEVUELVE EL SEGUNDO
+/* 
+por ejemplo:
+5 || false 
+5
+ */
+
 
 /* 
 PRIORIDAD:
@@ -96,11 +134,14 @@ OR:
     */
 
 /* POR EJ: DEJAR PASAR SI EL USUARIO TIENE MAS DE 400 NIVELES Y MENOS DE 900
-
+NIVEL = 1000
 CONDICION = NIVEL > 400 && NIVEL < 900
+            true && NIVEL < 900
+            NIVEL < 900
+            false
 */
 
-//VARIABLES
+//VARIABLES : son datos que podemos guardar en nuestro programa y utilizarlos despues.
 
 //VAR
 //LET

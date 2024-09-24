@@ -1,0 +1,228 @@
+@import url(./imports.css);
+@import url(./normalize.css);
+@import url(./variables.css);
+@import url(./fonts.css);
+
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 64px 250px;
+}
+
+.color-bg-primary{
+    background-color: var(--primary-color);
+}
+
+.color-bg-secondary{
+    background-color: var(--primary-color-bold);
+}
+
+.section .cabecera{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cabecera .img-container{
+    width: 500px;
+}
+
+.cabecera .img-container img{
+    width: 100%;
+}
+
+.cabecera .text-container{
+    width: 455px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+/* LISTA */
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.lista .list-item{
+    display: flex;
+    gap: 5px;
+}
+
+/* RESEÑAS */
+
+.reseñas-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.reseñas-container .reseñas-box{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    border-radius: 4px;
+    width: 345px;
+    position: relative;
+}
+
+.reseñas-container .reseñas-box img{
+    width: 205px;
+}
+
+.reseñas-container .reseñas-box a{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 34px;
+    right: 34px;
+}
+
+/* MEDIAQUEERIS */
+
+@media screen and (max-width: 1050px){
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 150px;
+    }
+
+    .section .cabecera{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .section .cabecera .text-container{
+        width: 100%;
+        display: flex;
+        gap: 40px;
+    }
+    .lista{
+        display: flex;
+        gap: 25px;
+    }
+    .cabecera .img-container{
+        width: 100%;
+    }
+    
+    .cabecera .img-container img{
+        width: 100%;
+    }
+
+    .reseñas-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .reseñas-container .reseñas-box{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .reseñas-container .reseñas-box a{
+        display: flex;
+        justify-content: end;
+        position: relative;
+        bottom: 5px;
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 80px;
+        width: 100vw;
+    }
+
+    .section .cabecera{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .section .cabecera .text-container{
+        width: 100%;
+        display: flex;
+        gap: 40px;
+    }
+    
+    .cabecera .img-container{
+        width: 100%;
+    }
+    
+    .cabecera .img-container img{
+        width: 100%;
+    }
+
+    .reseñas-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .reseñas-container .reseñas-box{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    
+    .reseñas-container .reseñas-box a{
+        display: flex;
+        justify-content: end;
+        position: relative;
+        bottom: 5px;
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 15px;
+        width: 100vw;
+    }
+
+    .section .cabecera{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .reseñas-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .reseñas-container .reseñas-box{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
