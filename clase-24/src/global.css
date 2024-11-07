@@ -1,0 +1,42 @@
+.navbar{
+    margin-top: 50px;
+}
+
+.cashcard{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: rgb(152, 78, 221);
+    font-size: 20px;
+}
+
+.headcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.numbercard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.namecard{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.button{
+    border-radius: 5px;
+    border: none;
+    color:black;
+    font-size: 10px;
+    background-color: rgb(187, 136, 235);
+}
